@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\NewsCategoryController;
 use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,3 +28,8 @@ Route::get('/home', [DashboardController::class, 'index']);
 //news
 Route::get('/listNews', [NewsController::class, 'newsList']);
 Route::get('/addNews', [NewsController::class, 'addNews']);
+
+//news category
+Route::get('/newsCategory', [NewsCategoryController::class, 'index']);
+Route::get('/newsCategory/getListDatatable', [NewsCategoryController::class, 'getListDatatable']);
+Route::get('/newsCategory/getTable', [NewsCategoryController::class, 'getTable']);
