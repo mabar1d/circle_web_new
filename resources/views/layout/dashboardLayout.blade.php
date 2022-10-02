@@ -14,17 +14,17 @@
   <meta itemprop="image" content="https://circlegames.id/img/CG.gif">
 
   <!-- Facebook Meta Tags -->
-  <!-- <meta property="og:url" content="https://nothing.com">
+  <meta property="og:url" content="https://circlegames.id">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Test website">
-  <meta property="og:description" content="This is the website description. Nice eh?">
-  <meta property="og:image" content="https://lorempixel.com/400/200/"> -->
+  <meta property="og:title" content="Website Circle Games">
+  <meta property="og:description" content="ini deskripsi website">
+  <meta property="og:image" content="https://circlegames.id/img/CG.gif">
 
   <!-- Twitter Meta Tags -->
-  <!-- <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Test website">
-  <meta name="twitter:description" content="This is the website description. Nice eh?">
-  <meta name="twitter:image" content="https://lorempixel.com/400/200/"> -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Website Circle Games">
+  <meta name="twitter:description" content="ini deskripsi website">
+  <meta name="twitter:image" content="https://circlegames.id/img/CG.gif">
 
   <!-- Meta Tags Generated via https://heymeta.com -->
   <title>Circle Game | Dashboard </title>
@@ -40,6 +40,9 @@
 </head>
 
 <body class="hold-transition sidebar-mini">
+  <div itemprop="image" itemscope="itemscope" itemtype="http://schema.org/ImageObject">
+    <!-- <meta content="url_gambar" itemprop='url' /> -->
+  </div>
   <div class="wrapper">
 
     <!-- Navbar -->
@@ -182,8 +185,7 @@
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-      @yield('content')
-    </div>
+      @yield(' content') </div>
     <!-- /.content-wrapper -->
 
     <!-- Control Sidebar -->
