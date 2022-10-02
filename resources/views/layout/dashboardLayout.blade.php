@@ -4,6 +4,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="name" content="Website Circle Games">
+  <meta name="description" content="ini deskripsi website">
+  <meta name="image" content="https://circlegames.id/img/CG.gif">
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Website Circle Games">
+  <meta itemprop="description" content="ini deskripsi website">
+  <meta itemprop="image" content="https://circlegames.id/img/CG.gif">
+
+  <!-- Facebook Meta Tags -->
+  <!-- <meta property="og:url" content="https://nothing.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Test website">
+  <meta property="og:description" content="This is the website description. Nice eh?">
+  <meta property="og:image" content="https://lorempixel.com/400/200/"> -->
+
+  <!-- Twitter Meta Tags -->
+  <!-- <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Test website">
+  <meta name="twitter:description" content="This is the website description. Nice eh?">
+  <meta name="twitter:image" content="https://lorempixel.com/400/200/"> -->
+
+  <!-- Meta Tags Generated via https://heymeta.com -->
   <title>Circle Game | Dashboard </title>
 
   <!-- Google Font: Source Sans Pro -->
