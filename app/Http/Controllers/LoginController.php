@@ -11,6 +11,9 @@ class LoginController extends Controller
 {
     public function index()
     {
+        if (!empty(session()->get('user'))) {
+           return redirect()->action([DashboardController::class,'index']);
+        }
         return view('login');
     }
 

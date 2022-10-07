@@ -22,34 +22,33 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form>
+              <form action="/addNews/add" method="post" enctype="multipart/form-data">
+                @csrf
                 <div class="card-body">
                   <div class="form-group">
                     <label for="news_category">News Category</label>
-                    <select class="form-control" id="news_category">
-                          <option>option 1</option>
-                          <option>option 2</option>
-                          <option>option 3</option>
-                          <option>option 4</option>
-                          <option>option 5</option>
+                    <select class="form-control" id="news_category" name="news_category">
+                      @foreach ($list_category as $news_category )
+                        <option value="{{$news_category['id']}}">{{$news_category['name']}}</option>
+                      @endforeach
                         </select>
                   </div>
                   <div class="form-group">
                     <label for="title">Title</label>
-                    <input type="text" class="form-control" id="title" placeholder="Title">
+                    <input type="text" class="form-control" id="title" placeholder="Title" name="title">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputFile">Image</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
+                        <input type="file" class="custom-file-input" id="file" name="file">
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="content">Content</label>
-                    <textarea type="text" class="form-control" id="content" placeholder="Title"></textarea>
+                    <textarea type="text" class="form-control" id="content" name="content" placeholder="Content"></textarea>
                   </div>
                 </div>
                 <!-- /.card-body -->

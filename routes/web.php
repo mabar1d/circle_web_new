@@ -26,8 +26,11 @@ Route::post('/login', [LoginController::class, 'authenticate']);
 Route::get('/home', [DashboardController::class, 'index']);
 
 //news
-Route::get('/listNews', [NewsController::class, 'newsList']);
+Route::get('/listNews', [NewsController::class, 'index']);
+Route::get('/listNews/getTable', [NewsController::class, 'newsList']);
+Route::get('/listNews/detailNews/{slug}', [NewsController::class, 'detailNews']);
 Route::get('/addNews', [NewsController::class, 'addNews']);
+Route::post('/addNews/add', [NewsController::class, 'addNewsNew']);
 
 //news category
 Route::get('/newsCategory', [NewsCategoryController::class, 'index']);
