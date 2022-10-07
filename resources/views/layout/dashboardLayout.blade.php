@@ -40,6 +40,7 @@
 </head>
 
 <body class="hold-transition sidebar-mini">
+@include('sweetalert::alert')
   <div itemprop="image" itemscope="itemscope" itemtype="http://schema.org/ImageObject">
     <!-- <meta content="url_gambar" itemprop='url' /> -->
   </div>
@@ -185,7 +186,8 @@
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-      @yield(' content') </div>
+      @yield('content')
+    </div>
     <!-- /.content-wrapper -->
 
     <!-- Control Sidebar -->
@@ -220,7 +222,6 @@
   <!-- AdminLTE App -->
   <script src="{{asset('adminlte/dist/js/adminlte.min.js')}}"></script>
   @yield('script_js')
-  @include('sweetalert::alert')
 </body>
 
 </html>

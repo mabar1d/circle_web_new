@@ -113,7 +113,7 @@ class NewsController extends Controller
         $response = ApiCircleHelpers::sendApi($url, "POST", $requestBody);
 
         if ($response['code'] != "00") {
-            return redirect()->back()->with('error', $response['desc']);
+            return redirect('addNews')->with('error', $response['desc']);
         }
         
         return redirect('news/listNews')->with('success', $response['desc']);
