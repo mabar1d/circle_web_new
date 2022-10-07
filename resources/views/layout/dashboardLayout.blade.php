@@ -4,6 +4,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="name" content="Website Circle Games">
+  <meta name="description" content="ini deskripsi website">
+  <meta name="image" content="https://circlegames.id/img/CG.gif">
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Website Circle Games">
+  <meta itemprop="description" content="ini deskripsi website">
+  <meta itemprop="image" content="https://circlegames.id/img/CG.gif">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://circlegames.id">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Website Circle Games">
+  <meta property="og:description" content="ini deskripsi website">
+  <meta property="og:image" content="https://circlegames.id/img/CG.gif">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Website Circle Games">
+  <meta name="twitter:description" content="ini deskripsi website">
+  <meta name="twitter:image" content="https://circlegames.id/img/CG.gif">
+
+  <!-- Meta Tags Generated via https://heymeta.com -->
   <title>Circle Game | Dashboard </title>
 
   <!-- Google Font: Source Sans Pro -->
@@ -17,6 +40,9 @@
 </head>
 
 <body class="hold-transition sidebar-mini">
+  <div itemprop="image" itemscope="itemscope" itemtype="http://schema.org/ImageObject">
+    <!-- <meta content="url_gambar" itemprop='url' /> -->
+  </div>
   <div class="wrapper">
 
     <!-- Navbar -->
@@ -159,8 +185,7 @@
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-      @yield('content')
-    </div>
+      @yield(' content') </div>
     <!-- /.content-wrapper -->
 
     <!-- Control Sidebar -->
