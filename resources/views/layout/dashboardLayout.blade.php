@@ -2,32 +2,37 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="name" content="Website Circle Games">
-  <meta name="description" content="ini deskripsi website">
-  <meta name="image" content="https://circlegames.id/img/CG.gif">
+  <title>Circle Game | Dashboard </title>
+  <meta name="description" content="description of your website/webpage, make sure you use keywords!">
+  <meta property="og:title" content="short title of your website/webpage" />
+  <meta property="og:url" content="https://circlegames.id/" />
+  <meta property="og:description" content="description of your website/webpage">
+  <meta property="og:image" content="https://api.circlegames.id/upload/news/news_4.jpg">
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="id_ID" />
+  <!-- <meta charset="utf-8"> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <!-- <meta name="name" content="Website Circle Games"> -->
+  <!-- <meta name="description" content="ini deskripsi website"> -->
+  <!-- <meta name="image" content="https://circlegames.id/img/CG.gif"> -->
 
   <!-- Google / Search Engine Tags -->
-  <meta itemprop="name" content="Website Circle Games">
-  <meta itemprop="description" content="ini deskripsi website">
-  <meta itemprop="image" content="https://circlegames.id/img/CG.gif">
+  <!-- <meta itemprop="name" content="Website Circle Games"> -->
+  <!-- <meta itemprop="description" content="ini deskripsi website"> -->
+  <!-- <meta itemprop="image" content="https://circlegames.id/img/CG.gif"> -->
 
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://circlegames.id">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Website Circle Games">
-  <meta property="og:description" content="ini deskripsi website">
-  <meta property="og:image" content="https://circlegames.id/img/CG.gif">
+  <!-- <meta property="og:url" content="https://circlegames.id"> -->
+  <!-- <meta property="og:type" content="website"> -->
+  <!-- <meta property="og:title" content="Website Circle Games"> -->
+  <!-- <meta property="og:description" content="ini deskripsi website"> -->
+  <!-- <meta property="og:image" content="https://circlegames.id/img/CG.gif"> -->
 
   <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Website Circle Games">
-  <meta name="twitter:description" content="ini deskripsi website">
-  <meta name="twitter:image" content="https://circlegames.id/img/CG.gif">
-
-  <!-- Meta Tags Generated via https://heymeta.com -->
-  <title>Circle Game | Dashboard </title>
+  <!-- <meta name="twitter:card" content="summary_large_image"> -->
+  <!-- <meta name="twitter:title" content="Website Circle Games"> -->
+  <!-- <meta name="twitter:description" content="ini deskripsi website"> -->
+  <!-- <meta name="twitter:image" content="https://circlegames.id/img/CG.gif"> -->
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
