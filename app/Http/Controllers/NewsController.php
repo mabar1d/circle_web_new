@@ -56,11 +56,11 @@ class NewsController extends Controller
 
     public function addNews()
     {
-        $url = env('API_CIRCLE') . 'getListNewsCategory'; 
+        $url = env('API_CIRCLE') . 'getListNewsCategory';
         $user = session()->get('user');
         $requestBody['user_id'] = $user->id;
         $requestBody['page'] = 1;
-        
+
 
         $response = ApiCircleHelpers::sendApi($url, "POST", $requestBody);
         $listData = new stdClass;
@@ -69,7 +69,7 @@ class NewsController extends Controller
             return view('news.addNews')->with('error', $response['desc']);
         }
 
-        return view('news/addNews',["list_category" => $response['data']]);
+        return view('news/addNews', ["list_category" => $response['data']]);
     }
 
     public function detailNews(Request $request)
@@ -77,14 +77,14 @@ class NewsController extends Controller
         $id_news = $request->id_news;
         $url = env('API_CIRCLE') . 'getInfoNews';
         $user = session()->get('user');
-        $requestBody['user_id'] = $user->id;
+        // $requestBody['user_id'] = $user->id;
         $requestBody['slug'] = $request->slug;
 
         $response = ApiCircleHelpers::sendApi($url, "POST", $requestBody);
         $listData = new stdClass;
 
         if ($response['code'] != "00") {
-            return redirect()->back()->with('error',$response['desc']);
+            return redirect()->back()->with('error', $response['desc']);
         }
 
         if ($response["code"] == "00") {
@@ -92,9 +92,10 @@ class NewsController extends Controller
             $listData->title = $responseData['title'];
             $listData->content =  $responseData['content'];
             $listData->image =  $responseData['image'];
+            $listData->linkShare =  $responseData['linkShare'];
         }
 
-        return view('news.detailNews',["data" => $listData]);
+        return view('news.detailNews', ["data" => $listData]);
     }
 
     public function addNewsNew(Request $request)
@@ -115,7 +116,7 @@ class NewsController extends Controller
         if ($response['code'] != "00") {
             return redirect('addNews')->with('error', $response['desc']);
         }
-        
+
         return redirect('news/listNews')->with('success', $response['desc']);
     }
 }

@@ -28,7 +28,7 @@ Route::get('/home', [DashboardController::class, 'index']);
 //news
 Route::get('/listNews', [NewsController::class, 'index']);
 Route::get('/listNews/getTable', [NewsController::class, 'newsList']);
-Route::get('/listNews/detailNews/{slug}', [NewsController::class, 'detailNews']);
+Route::get('/news/{slug}', [NewsController::class, 'detailNews']);
 Route::get('/addNews', [NewsController::class, 'addNews']);
 Route::post('/addNews/add', [NewsController::class, 'addNewsNew']);
 
