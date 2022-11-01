@@ -24,22 +24,22 @@
 <body class="hold-transition layout-top-nav">
     <div class="wrapper">
         <div class="content-wrapper">
-            <div>
-                <div class="container">
-                    <div class="row">
-                        <div class="text-center">
-                            <h1>{{$data->title}}</h1>
-                        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <h1>{{$data->title}}</h1>
                     </div>
                 </div>
             </div>
-            <div class="content">
-                <div class="container">
-                    <div class="text-center">
-                        <img style="width: 700px;" src="{{ $data->image }}" alt="image-news">
-                    </div>
-                    <div class="row text-justify">
-                        <p>{{$data->content}}</p>
+            <div class="col-md-12">
+                <div class="content">
+                    <div class="container">
+                        <div class="text-center">
+                            <img src="{{ $data->image }}" alt="image-news" style="max-width: 100%; height: auto;">
+                        </div>
+                        <div class="row text-justify">
+                            <p>{{$data->content}}</p>
+                        </div>
                     </div>
                 </div>
             </div>
